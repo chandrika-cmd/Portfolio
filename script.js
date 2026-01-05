@@ -7,7 +7,6 @@ function revealOnScroll() {
 
   reveals.forEach((reveal) => {
     const revealTop = reveal.getBoundingClientRect().top;
-
     if (revealTop < windowHeight - revealPoint) {
       reveal.classList.add("active");
     }
@@ -16,7 +15,8 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
-// Hamburger menu toggle
+
+// Hamburger menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 
