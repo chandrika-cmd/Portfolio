@@ -1,4 +1,4 @@
-// Scroll reveal
+// Scroll reveal animation
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {
@@ -13,7 +13,7 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
-// Hamburger menu
+// Mobile menu
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 
