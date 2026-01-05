@@ -1,3 +1,4 @@
+/* ================= VARIABLES ================= */
 :root {
   --bg: #020617;
   --card: #0f172a;
@@ -8,6 +9,7 @@
   --accent-light: #a5b4fc;
 }
 
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ body {
   line-height: 1.7;
 }
 
-/* ===== NAVBAR ===== */
+/* ================= NAVBAR ================= */
 .navbar {
   position: sticky;
   top: 0;
@@ -73,7 +75,7 @@ body {
   width: 100%;
 }
 
-/* ===== HERO ===== */
+/* ================= HERO ================= */
 header {
   padding: 140px 20px 120px;
   background: radial-gradient(circle at top left, #0f172a 0%, #020617 60%);
@@ -107,7 +109,7 @@ header {
   color: var(--muted);
 }
 
-/* ===== SECTIONS ===== */
+/* ================= SECTIONS ================= */
 section {
   max-width: 1100px;
   margin: auto;
@@ -130,7 +132,7 @@ h2::after {
   margin-top: 10px;
 }
 
-/* ===== BUTTONS ===== */
+/* ================= BUTTONS ================= */
 .buttons {
   margin-top: 36px;
   display: flex;
@@ -152,10 +154,6 @@ h2::after {
   color: white;
 }
 
-.btn.primary:hover {
-  box-shadow: 0 0 0 4px rgba(99,102,241,0.3);
-}
-
 .btn.secondary {
   border: 1px solid var(--border);
   color: var(--text);
@@ -166,7 +164,7 @@ h2::after {
   font-size: 0.9rem;
 }
 
-/* ===== SOCIALS ===== */
+/* ================= SOCIALS ================= */
 .socials {
   margin-top: 28px;
   display: flex;
@@ -182,7 +180,7 @@ h2::after {
   color: var(--accent);
 }
 
-/* ===== PROJECTS ===== */
+/* ================= PROJECTS ================= */
 .project {
   background: linear-gradient(
     180deg,
@@ -215,7 +213,47 @@ h2::after {
   color: var(--accent-light);
 }
 
-/* ===== SKILLS ===== */
+/* ================= CERTIFICATIONS ================= */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.cert-card {
+  background: linear-gradient(
+    180deg,
+    rgba(99,102,241,0.08),
+    var(--card)
+  );
+  padding: 26px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+}
+
+.cert-card h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.cert-card p {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.cert-card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ================= SKILLS ================= */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -229,7 +267,7 @@ h2::after {
   border: 1px solid var(--border);
 }
 
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 32px;
@@ -237,7 +275,7 @@ footer {
   color: var(--muted);
 }
 
-/* ===== ANIMATION ===== */
+/* ================= ANIMATION ================= */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -249,7 +287,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ===== MOBILE ===== */
+/* ================= MOBILE ================= */
 .hamburger {
   display: none;
   margin-left: auto;
