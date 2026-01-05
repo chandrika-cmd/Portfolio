@@ -322,3 +322,13 @@ footer {
 
   .nav-links.active { display: flex; }
 }
+/* Make certificate cards clickable */
+.cert-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.cert-card:hover h3 {
+  color: var(--accent-light);
+}
