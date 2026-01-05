@@ -1,4 +1,4 @@
-// Scroll reveal animation
+// Scroll reveal
 const reveals = document.querySelectorAll(".reveal");
 
 function revealOnScroll() {

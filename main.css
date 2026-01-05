@@ -63,8 +63,8 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  left: 0;
   bottom: -6px;
+  left: 0;
   background: var(--accent);
   transition: width 0.3s ease;
 }
@@ -96,6 +96,12 @@ header {
   z-index: -1;
 }
 
+.hero-intro {
+  color: var(--accent-light);
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
 .hero-subtitle {
   margin-top: 12px;
   color: var(--muted);
@@ -118,11 +124,10 @@ h2 {
 h2::after {
   content: "";
   display: block;
-  width: 48px;
+  width: 56px;
   height: 3px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), transparent);
   margin-top: 10px;
-  border-radius: 2px;
 }
 
 /* ===== BUTTONS ===== */
@@ -143,7 +148,7 @@ h2::after {
 }
 
 .btn.primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
   color: white;
 }
 
@@ -161,9 +166,29 @@ h2::after {
   font-size: 0.9rem;
 }
 
+/* ===== SOCIALS ===== */
+.socials {
+  margin-top: 28px;
+  display: flex;
+  gap: 18px;
+}
+
+.socials a {
+  font-size: 1.3rem;
+  color: var(--muted);
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
+
 /* ===== PROJECTS ===== */
 .project {
-  background: var(--card);
+  background: linear-gradient(
+    180deg,
+    rgba(99,102,241,0.08),
+    var(--card)
+  );
   padding: 36px;
   border-radius: 20px;
   border-left: 4px solid var(--accent);
