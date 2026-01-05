@@ -23,3 +23,13 @@ const navLinks = document.getElementById("nav-links");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+// Dark mode
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  const icon = themeToggle.querySelector("i");
+  icon.classList.toggle("fa-moon");
+  icon.classList.toggle("fa-sun");
+});
