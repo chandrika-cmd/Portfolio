@@ -56,6 +56,50 @@ body {
 .nav-links a:hover {
   color: #6366f1;
 }
+/* ================= HAMBURGER MENU ================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #0f172a;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
 
 /* ================= HEADER ================= */
 header {
@@ -93,7 +137,8 @@ header p {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+transform: translateY(60px);
+
   background: #e0e7ff;
 }
 
@@ -136,7 +181,8 @@ section h2 {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 20px 35px rgba(15, 23, 42, 0.08);
-  transition: transform 0.35s ease;
+transition: opacity 1s ease, transform 1s ease;
+
 }
 
 .skills-container div:hover {
@@ -257,4 +303,18 @@ footer {
     gap: 15px;
     font-size: 0.95rem;
   }
+}
+/* ================= SCROLL ANIMATIONS ================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal {
+  border: 2px dashed red;
 }
