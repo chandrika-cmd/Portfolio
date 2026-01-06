@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System | Chandrika Pasupuleti</title>
+
+    <meta name="description" content="Details about the Library Management System project built with Java and MySQL.">
+    <meta property="og:title" content="Library Management System | Chandrika Pasupuleti">
+    <meta property="og:description" content="A comprehensive system for efficient library operations.">
+    <meta property="og:type" content="article">
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">Chandrika.dev</div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PROJECT DETAIL ===== -->
+    <section class="section reveal">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <a href="projects.html" class="btn secondary"
+                style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <h1 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Library Management System</h1>
+            <div class="tags" style="margin-bottom: 2rem;">
+                <span class="tag">Java</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Swing/JavaFX</span>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>Project Overview</h3>
+                <p>
+                    The Library Management System is a robust desktop application designed to streamline the daily
+                    operations of a library.
+                    It replaces manual record-keeping with an efficient, automated digital system.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                </p>
+                <ul style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li><strong>Book Management:</strong> Add, update, and remove book records easily.</li>
+                    <li><strong>Member Management:</strong> Track member details and borrowing history.</li>
+                    <li><strong>Issue & Return:</strong> Automated tracking of due dates and fine calculation for late
+                        returns.</li>
+                    <li><strong>Search Functionality:</strong> Quick search by title, author, or ISBN.</li>
+                    <li><strong>Admin Dashboard:</strong> Comprehensive view of total books, issued books, and active
+                        members.</li>
+                </ul>
+
+                <h3>Technical Challenges</h3>
+                <p>
+                    One of the main challenges was ensuring data consistency between the Java application and the MySQL
+                    database,
+                    especially during concurrent transactions (e.g., two admins trying to issue the same book).
+                    This was resolved by implementing proper transaction management and locking mechanisms in the
+                    database.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <!-- Placeholder for GitHub link if available, otherwise just a visual button or removed -->
+                <a href="#" class="btn primary disabled" style="opacity: 0.7; cursor: not-allowed;">
+                    <i class="fab fa-github"></i> Repository (Coming Soon)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/chandrika-cmd" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/chandrika-pasupuleti-204293334" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:chandrikapasupuleti.cs@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p class="footer-copy">© 2026 Chandrika Pasupuleti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

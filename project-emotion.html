@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facial Emotion Recognition | Chandrika Pasupuleti</title>
+
+    <meta name="description"
+        content="Deep learning project using TensorFlow and CNNs to detect human emotions from facial expressions.">
+    <meta property="og:title" content="Facial Emotion Recognition | Chandrika Pasupuleti">
+    <meta property="og:description" content="AI model for real-time emotion detection.">
+    <meta property="og:type" content="article">
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="window.location.href='index.html'">Chandrika.dev</div>
+
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== PROJECT DETAIL ===== -->
+    <section class="section reveal">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <a href="projects.html" class="btn secondary"
+                style="margin-bottom: 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+
+            <h1 class="section-title" style="text-align: left; margin-bottom: 0.5rem;">Facial Emotion Recognition</h1>
+            <div class="tags" style="margin-bottom: 2rem;">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Keras</span>
+                <span class="tag">OpenCV</span>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>Project Overview</h3>
+                <p>
+                    This research-driven project utilizes <strong>Convolutional Neural Networks (CNNs)</strong> and
+                    Transfer Learning logic to detect human emotions (Happy, Sad, Angry, Neutral, Surprised, etc.)
+                    from live video feeds or static images.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                </p>
+                <ul style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; padding-left: 1.5rem;">
+                    <li><strong>Real-Time Detection:</strong> Processes video frames instantly using OpenCV.</li>
+                    <li><strong>High Accuracy:</strong> Trained on large datasets (like FER-2013) to recognize subtle
+                        facial cues.</li>
+                    <li><strong>Transfer Learning:</strong> Leveraged pre-trained models (like VGG16/ResNet) to boost
+                        performance with limited custom data.</li>
+                    <li><strong>Visualization:</strong> Draws bounding boxes around faces with labels indicating the
+                        detected emotion and confidence score.</li>
+                </ul>
+
+                <h3>Applications</h3>
+                <p>
+                    This technology has potential applications in customer feedback analysis, mental health monitoring,
+                    and improving human-computer interaction by making systems more empathetic to user states.
+                </p>
+            </div>
+
+            <div class="buttons">
+                <a href="#" class="btn primary disabled" style="opacity: 0.7; cursor: not-allowed;">
+                    <i class="fab fa-github"></i> View Model Source
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/chandrika-cmd" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/chandrika-pasupuleti-204293334" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="mailto:chandrikapasupuleti.cs@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p class="footer-copy">© 2026 Chandrika Pasupuleti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

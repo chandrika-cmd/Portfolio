@@ -131,3 +131,31 @@ window.addEventListener("mousemove", (e) => {
     top: `${posY}px`
   }, { duration: 500, fill: "forwards" });
 });
+
+// ===== ACCORDION LOGIC (Highlights) =====
+const accordionCards = document.querySelectorAll(".highlight-card");
+
+if (accordionCards.length > 0) {
+  accordionCards.forEach(card => {
+    card.addEventListener("click", () => {
+      // Close other cards first (Exclusive Accordion)
+      accordionCards.forEach(otherCard => {
+        if (otherCard !== card) {
+          otherCard.classList.remove("active");
+        }
+      });
+
+      // Toggle the clicked card
+      card.classList.toggle("active");
+    });
+  });
+
+  // Close accordion when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".highlight-card")) {
+      accordionCards.forEach(card => {
+        card.classList.remove("active");
+      });
+    }
+  });
+}
